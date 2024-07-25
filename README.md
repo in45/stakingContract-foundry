@@ -1,6 +1,22 @@
-## Foundry
+# Staking Foundry Project
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Overview
+
+This project contains a smart contract for a staking mechanism with reward functionalities. The contract allows users to deposit ERC20 tokens, earn rewards based on the time they stake, and withdraw their staked tokens along with the accrued rewards.
+
+## Features
+
+- **Deposit**: Users can deposit ERC20 tokens to stake.
+- **Withdraw**: Users can withdraw their staked tokens and rewards.
+- **Claim Rewards**: Users can claim their rewards.
+- **Compound Rewards**: Users can compound their rewards to increase their stake.
+- **Reward Calculation**: Rewards are calculated based on the amount staked and the duration for which tokens are staked.
+
+## Project Structure
+
+- **`src/`**: Contains the Solidity staking contract.
+- **`test/`**: Contains the Solidity test files for the staking contract.
+- **`foundry.toml`**: Foundry configuration file.
 
 Foundry consists of:
 
@@ -43,12 +59,6 @@ $ forge snapshot
 
 ```shell
 $ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
 ```
 
 ### Cast
